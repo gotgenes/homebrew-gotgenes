@@ -1,8 +1,8 @@
 class Getignore < Formula
   desc "A command-line tool to bootstrap .gitignore files from GitHub .gitignore templates"
   homepage "https://github.com/gotgenes/getignore"
-  url "https://github.com/gotgenes/getignore/archive/0.1.0.tar.gz"
-  sha256 "ed877423f3e4e1dff61a0c6837bca6ae2eda6c296a17343ba101f58446abbda1"
+  url "https://github.com/gotgenes/getignore/archive/0.2.0.tar.gz"
+  sha256 "e2ad5dcd7ae614a86dd3a8c98a20025a19ef7aecd3860890dde00d845dd2faee"
 
   head "https://github.com/gotgenes/getignore.git"
 
