@@ -1,29 +1,22 @@
 class Getignore < Formula
-  desc "A command-line tool to bootstrap .gitignore files from GitHub .gitignore templates"
+  desc "Bootstraps .gitignore files from GitHub gitignore templates"
   homepage "https://github.com/gotgenes/getignore"
-  url "https://github.com/gotgenes/getignore/archive/1.0.0.tar.gz"
-  sha256 "064b91400b9d652f86a0a21faba6d4003f3ab9d271287a4536cc1a16413b9bb6"
-
-  head "https://github.com/gotgenes/getignore.git"
+  url "https://github.com/gotgenes/getignore.git",
+      {
+        tag:      "v2.0.0",
+        revision: "85dfa61c97a408e4b339093536f6777129136bf0",
+      }
+  license "MIT"
 
   depends_on "go" => :build
-  depends_on "glide" => :build
 
   def install
-    ENV["GOPATH"] = buildpath
-    ENV["GLIDE_HOME"] = HOMEBREW_CACHE/"glide_home/#{name}"
-
-    getignore_path = buildpath/"src/github.com/gotgenes/getignore"
-    getignore_path.install buildpath.children
-
-    cd getignore_path do
-      system "glide", "install"
-      system "go", "build", "-o", "getignore"
-      bin.install "getignore"
-    end
+    system "go", "build", *std_go_args
+    bash_completion.install "completions/bash/getignore-completion.bash"
+    zsh_completion.install "completions/zsh/_getignore"
   end
 
   test do
-    system "getignore" "--version"
+    system "getignore", "--version"
   end
 end
