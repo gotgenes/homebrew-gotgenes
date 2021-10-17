@@ -3,8 +3,8 @@ class Getignore < Formula
   homepage "https://github.com/gotgenes/getignore"
   url "https://github.com/gotgenes/getignore.git",
       {
-        tag:      "v3.0.0",
-        revision: "e64d137cfccf59826937f48ea95e2f4e753f90e5",
+        tag:      "v3.0.1",
+        revision: "efd6195e94286ee025183b912a0ba859a38af364",
       }
   license "MIT"
 
