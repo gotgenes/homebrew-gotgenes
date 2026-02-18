@@ -1,28 +1,28 @@
 class Getignore < Formula
   desc "Bootstraps .gitignore files from GitHub gitignore templates"
   homepage "https://github.com/gotgenes/getignore"
-  version "5.0.3"
+  version "5.0.4"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/gotgenes/getignore/releases/download/v5.0.3/getignore-v5.0.3-darwin-amd64.tar.gz"
-      sha256 "227f8d489cfe7b1d3bc9a5612966d897df36964d6589cec2cade5b5eec75264a"
+      url "https://github.com/gotgenes/getignore/releases/download/v5.0.4/getignore-v5.0.4-darwin-amd64.tar.gz"
+      sha256 "ee73e897b04bce35ae5e58af4d1b1f22646be1690a592e25347b0edf3943ca42"
     end
     on_arm do
-      url "https://github.com/gotgenes/getignore/releases/download/v5.0.3/getignore-v5.0.3-darwin-arm64.tar.gz"
-      sha256 "bdcb7964948ee554ac4c9c4017f7a258d2b19d3c3b8e77be90f77f7f1f3ded8e"
+      url "https://github.com/gotgenes/getignore/releases/download/v5.0.4/getignore-v5.0.4-darwin-arm64.tar.gz"
+      sha256 "9cd7cd1645b919b7b5967f8bc94e4861688bbfdae84c2f4391961562934ed147"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/gotgenes/getignore/releases/download/v5.0.3/getignore-v5.0.3-linux-amd64.tar.gz"
-      sha256 "510976381d0248d74646e47cf0399b941d3cb30627e0a48d830a480d6295177a"
+      url "https://github.com/gotgenes/getignore/releases/download/v5.0.4/getignore-v5.0.4-linux-amd64.tar.gz"
+      sha256 "27b7ca934684f8542f6be30fb7c46c8c458324233a7fed9626289c67720fb6b3"
     end
     on_arm do
-      url "https://github.com/gotgenes/getignore/releases/download/v5.0.3/getignore-v5.0.3-linux-arm64.tar.gz"
-      sha256 "2e515a87280b22e7b524bf1a71444e89558dba25d8e9a82d17e013ec170f54af"
+      url "https://github.com/gotgenes/getignore/releases/download/v5.0.4/getignore-v5.0.4-linux-arm64.tar.gz"
+      sha256 "834c11a595b4a7dc7bb55141e54ecac692f474afc72cb1c4f2284f688fddca8a"
     end
   end
 
