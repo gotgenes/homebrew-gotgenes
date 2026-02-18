@@ -1,35 +1,33 @@
 class Getignore < Formula
   desc "Bootstraps .gitignore files from GitHub gitignore templates"
   homepage "https://github.com/gotgenes/getignore"
-  version "5.0.4"
+  version "6.0.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/gotgenes/getignore/releases/download/v5.0.4/getignore-v5.0.4-darwin-amd64.tar.gz"
-      sha256 "ee73e897b04bce35ae5e58af4d1b1f22646be1690a592e25347b0edf3943ca42"
+      url "https://github.com/gotgenes/getignore/releases/download/v6.0.1/getignore-v6.0.1-darwin-amd64.tar.gz"
+      sha256 "f1d5ccd38a957ab452fe0701ddbd51701a21c1631f37cc23b7f95047cf800111"
     end
     on_arm do
-      url "https://github.com/gotgenes/getignore/releases/download/v5.0.4/getignore-v5.0.4-darwin-arm64.tar.gz"
-      sha256 "9cd7cd1645b919b7b5967f8bc94e4861688bbfdae84c2f4391961562934ed147"
+      url "https://github.com/gotgenes/getignore/releases/download/v6.0.1/getignore-v6.0.1-darwin-arm64.tar.gz"
+      sha256 "2fdbab6be19f9e51dc231a9284ae9ec13d2c240f0ece0a4c84e37aa20f8aa851"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/gotgenes/getignore/releases/download/v5.0.4/getignore-v5.0.4-linux-amd64.tar.gz"
-      sha256 "27b7ca934684f8542f6be30fb7c46c8c458324233a7fed9626289c67720fb6b3"
+      url "https://github.com/gotgenes/getignore/releases/download/v6.0.1/getignore-v6.0.1-linux-amd64.tar.gz"
+      sha256 "79a3f96ce458a469f11dcc3f8335d4758a8a57e35fe7dde4f3291e5dfb1ff2d8"
     end
     on_arm do
-      url "https://github.com/gotgenes/getignore/releases/download/v5.0.4/getignore-v5.0.4-linux-arm64.tar.gz"
-      sha256 "834c11a595b4a7dc7bb55141e54ecac692f474afc72cb1c4f2284f688fddca8a"
+      url "https://github.com/gotgenes/getignore/releases/download/v6.0.1/getignore-v6.0.1-linux-arm64.tar.gz"
+      sha256 "7dcc348e38ba2fd5f4b5874e0ed36104616972610161b57544beed1350addf88"
     end
   end
 
   def install
     bin.install "getignore"
-    bash_completion.install "completions/bash/getignore-completion.bash"
-    zsh_completion.install "completions/zsh/_getignore"
   end
 
   test do
